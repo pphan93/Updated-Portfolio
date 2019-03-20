@@ -138,6 +138,12 @@
   box-shadow: 0 1px 0 0 #880e4f;
 }
 
+.logo {
+  width: 35px;
+  height: 35px;
+  fill: rgba(255, 255, 255, 0.89);
+}
+
 .view, body, html {
   height: 100%
 }
