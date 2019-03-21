@@ -1,89 +1,66 @@
-[data-tooltip] {
-  cursor: pointer;
-  position: relative;
+/*Alt Color - theme
+880e4f*/
+
+.view, body, html {
+  height: 100%
 }
 
-[data-tooltip]:before, [data-tooltip]:after {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.15s cubic-bezier(0.5, 1, 0.25, 1);
-  z-index: 1;
+.navbar {
+  background-color: rgba(0, 0, 0, .3);
 }
 
-[data-tooltip]:before {
-  padding: 5px;
-  width: 110px;
-  border-radius: 3px;
-  background: rgba(0, 0, 0, 0.568);
+.page-footer, .top-nav-collapse {
+  background-color: #1C2331;
+  border-bottom: 3px solid #A51400;
+}
+
+.btn-unique {
+  background-color: #A51400!important;
   color: #fff;
-  content: attr(data-tooltip);
-  text-align: center;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.2;
 }
 
-[data-tooltip]:after {
-  border: 8px solid transparent;
-  width: 0;
-  content: "";
-  font-size: 0;
-  line-height: 0;
+@media only screen and (max-width:768px) {
+  .navbar {
+    background-color: #1C2331
+  }
 }
 
-[data-tooltip]:hover:before, [data-tooltip]:hover:after {
-  visibility: visible;
-  opacity: 1;
+/*---Main Logo--*/
+.logo {
+  width: 35px;
+  height: 35px;
+  fill: rgba(255, 255, 255, 0.89);
 }
 
-[data-tooltip].t-md:before {
-  width: 140px;
+.mypic {
+  border-radius: 50%;
 }
 
-[data-tooltip].t-bottom:before {
-  top: 100%;
-  left: 50%;
-  margin-top: 5px;
-  transform: translateX(-50%);
+.full-page-intro {
+  /* Full height */
+  height: 100%;
+  background-image: url("../images/20181006_163400.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-[data-tooltip].t-bottom:after {
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border-bottom: 8px solid #000;
-  border-top: none;
+.overlay img {
+  width: 350px;
+  height: 260px;
 }
 
-[data-tooltip].t-bottom:hover:before, [data-tooltip].t-bottom:hover:after {
-  transform: translateX(-50%) translateY(5px);
+html, body, header, .view {
+  height: 100%;
 }
 
-[data-tooltip].t-left:before {
-  top: 50%;
-  right: 100%;
-  margin-right: 5px;
-  transform: translateY(-50%);
-}
+/*------------CONTACT SECTION----------------*/
 
-[data-tooltip].t-left:after {
-  top: 50%;
-  right: 100%;
-  transform: translateY(-50%);
-  border-left: 8px solid #000;
-  border-right: none;
-}
-
-[data-tooltip].t-left:hover:before, [data-tooltip].t-left:hover:after {
-  transform: translateX(-5px) translateY(-50%);
-}
 
 .contact-section .contact {
   -webkit-border-radius: 0 .25rem .25rem 0;
   border-radius: 0 .25rem .25rem 0;
-  background-color: rgb(28, 35, 49);
+  background-color: #1C2331;
 }
 
 .contact-section .form .btn-floating {
@@ -121,81 +98,39 @@
 }
 
 .md-form input[type=text]:focus:not([readonly])+label {
-  color: #880e4f;
+  color: #A51400;
 }
 
 .md-form input[type=text]:focus:not([readonly]) {
-  border-bottom: 1px solid #880e4f;
-  box-shadow: 0 1px 0 0 #880e4f;
+  border-bottom: 1px solid #A51400;
+  box-shadow: 0 1px 0 0 #A51400;
 }
 
 .md-form textarea.md-textarea:focus:not([readonly])+label {
-  color: #880e4f;
+  color: #A51400;
 }
 
 .md-form textarea.md-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #880e4f;
-  box-shadow: 0 1px 0 0 #880e4f;
+  border-bottom: 1px solid #A51400;
+  box-shadow: 0 1px 0 0 #A51400;
 }
 
-.logo {
-  width: 35px;
-  height: 35px;
-  fill: rgba(255, 255, 255, 0.89);
+.contact-link {
+  color: white !important;
 }
 
-.view, body, html {
-  height: 100%
+a {
+  color: white;
 }
 
-@media (max-width:740px) {
-  .full-page-intro {
-    height: 1000px
-  }
+a:hover {
+  color: rgb(182, 181, 181);
 }
 
-.navbar {
-  background-color: rgba(0, 0, 0, .3);
-}
-
-.page-footer, .top-nav-collapse {
-  background-color: #1C2331;
-  border-bottom: 3px solid #880e4f;
-}
-
-@media only screen and (max-width:768px) {
-  .navbar {
-    background-color: #1C2331
-  }
-}
-
-.mypic {
-  border-radius: 50%;
-}
-
-.full-page-intro {
-  background-image: url("../images/20181006_163400.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.overlay img {
-  width: 350px;
-  height: 260px;
-}
-
-html, body, header, .view {
-  height: 100%;
-}
-
+/*
 @media (max-width: 740px) {
   html, body, header, .view {
     height: 1000px;
-  }
-  .full-page-intro {
-    background-image: url("../images/background_mobile.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 }
 
@@ -209,4 +144,11 @@ html, body, header, .view {
   .navbar:not(.top-nav-collapse) {
     background: #1C2331 !important;
   }
-}
+}*/
+
+ /*
+@media (max-width:740px) {
+ .full-page-intro {
+    height: 1000px
+  }
+}*/
