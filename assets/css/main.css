@@ -1,7 +1,9 @@
 /*Alt Color - theme
 880e4f*/
 
-.view, body, html {
+.view,
+body,
+html {
   height: 100%
 }
 
@@ -9,13 +11,14 @@
   background-color: rgba(0, 0, 0, .3);
 }
 
-.page-footer, .top-nav-collapse {
+.page-footer,
+.top-nav-collapse {
   background-color: #1C2331;
   border-bottom: 3px solid #A51400;
 }
 
 .btn-unique {
-  background-color: #A51400!important;
+  background-color: #A51400 !important;
   color: #fff;
 }
 
@@ -50,7 +53,10 @@
   height: 260px;
 }
 
-html, body, header, .view {
+html,
+body,
+header,
+.view {
   height: 100%;
 }
 
@@ -126,29 +132,3 @@ a {
 a:hover {
   color: rgb(182, 181, 181);
 }
-
-/*
-@media (max-width: 740px) {
-  html, body, header, .view {
-    height: 1000px;
-  }
-}
-
-@media (min-width: 800px) and (max-width: 850px) {
-  html, body, header, .view {
-    height: 650px;
-  }
-}
-
-@media (min-width: 800px) and (max-width: 850px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #1C2331 !important;
-  }
-}*/
-
- /*
-@media (max-width:740px) {
- .full-page-intro {
-    height: 1000px
-  }
-}*/
